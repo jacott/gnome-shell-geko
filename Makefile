@@ -69,12 +69,21 @@ endif
 #	pkill -HUP gnome-shell
 	-rm -fR _build
 	echo done
+
 install-gkj: _build
 	rm -rf $(INSTALLBASE)/$(INSTALLNAME)
 	mkdir -p $(INSTALLBASE)/$(INSTALLNAME)
 	rsync -r ./_build/* gkj:$(INSTALLBASE)/$(INSTALLNAME)/
 	-rm -fR _build
 	echo done
+
+install-lenny: _build
+	rm -rf $(INSTALLBASE)/$(INSTALLNAME)
+	mkdir -p $(INSTALLBASE)/$(INSTALLNAME)
+	rsync -r ./_build/* lenny:$(INSTALLBASE)/$(INSTALLNAME)/
+	-rm -fR _build
+	echo done
+
 zip-file: _build
 	cd _build ; \
 	zip -qr "$(UUID)$(VSTRING).zip" .

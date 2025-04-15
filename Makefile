@@ -1,6 +1,6 @@
 # Basic Makefile
 
-UUID = my-setup@geoffjacobsen.gmail.com
+UUID = geko@geoffjacobsen.gmail.com
 BASE_MODULES = extension.js stylesheet.css metadata.json COPYING README.md
 EXTRA_MODULES = Utils.js NavManager.js CommandManager.js TileManager.js SystemMonitor.js SoundControl.js # Settings.ui
 # EXTRA_MEDIA = logo.svg glossy.svg
@@ -34,7 +34,7 @@ clean:
 
 extension: ./schemas/gschemas.compiled $(MSGSRC:.po=.mo)
 
-./schemas/gschemas.compiled: ./schemas/org.gnome.shell.extensions.my-setup.gschema.xml
+./schemas/gschemas.compiled: ./schemas/org.gnome.shell.extensions.geko.gschema.xml
 	glib-compile-schemas ./schemas/
 
 # potfile: ./po/dashtodock.pot

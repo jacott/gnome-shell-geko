@@ -12,7 +12,7 @@ const cmds = new Array(4);
 
 const DBUS_IF = `
 <node>
- <interface name="org.gnome.Shell.mySetup">
+ <interface name="org.gnome.Shell.geko">
    <method name="activateFav">
      <arg type="s" direction="in" />
    </method>
@@ -124,7 +124,7 @@ const raiseOrLower = () => {
 class DBusAction {
   constructor() {
     this._dbusImpl = Gio.DBusExportedObject.wrapJSObject(DBUS_IF, this);
-    this._dbusImpl.export(Gio.DBus.session, '/org/gnome/Shell/mySetup');
+    this._dbusImpl.export(Gio.DBus.session, '/org/gnome/Shell/geko');
   }
 
   activateFav(str) {

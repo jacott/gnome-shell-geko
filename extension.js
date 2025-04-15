@@ -28,7 +28,7 @@ const workspaceChanged = ()=>{
 };
 
 
-export default class MySetupExtension extends Extension {
+export default class GekoExtension extends Extension {
   enable() {
     globalSignals = [];
     // _originalLastDeviceIsTouchscreen = Keyboard.prototype._lastDeviceIsTouchscreen;

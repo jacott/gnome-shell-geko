@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <schemalist gettext-domain="gnome-shell-extensions">
-  <schema path="/org/gnome/shell/extensions/my-setup/" id="org.gnome.shell.extensions.my-setup">
+  <schema path="/org/gnome/shell/extensions/geko/" id="org.gnome.shell.extensions.geko">
     <key name="hotkey-1" type="as">
       <default><![CDATA[['<Super>1']]]></default>
       <summary>Keybinding to trigger ws 1</summary>

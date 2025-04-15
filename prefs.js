@@ -8,7 +8,7 @@ class Settings {
     this._builder = new Gtk.Builder();
 
     // this._builder.set_translation_domain(Me.metadata['gettext-domain']);
-    this._builder.add_from_file(Me.path + '/my-setup-settings.ui');
+    this._builder.add_from_file(Me.path + '/geko-settings.ui');
 
     this.widget = this._builder.get_object('settings_keyboard');
 

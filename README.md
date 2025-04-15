@@ -7,7 +7,7 @@
 The extension can be installed directly from source, either for the convenience of using git or to
 test the latest development version. Clone the desired branch with git
 
-<pre>git clone https://github.com/jacott/my-setup.git</pre>
+<pre>git clone https://github.com/jacott/geko.git</pre>
 
 or download the branch from github. A simple Makefile is included. Then run
 

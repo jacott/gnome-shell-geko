@@ -39,7 +39,7 @@ export const moveResize = (mw, x, y, w, h) => {
 export const moveResizeRect = (mw, rect) => {moveResize(mw, rect.x, rect.y, rect.width, rect.height)};
 
 export const getSettings = () => {
-  // const extensionObject = Extension.lookupByUUID('my-setup@geoffjacobsen.gmail.com');
+  // const extensionObject = Extension.lookupByUUID('geko@geoffjacobsen.gmail.com');
   const extensionObject = Extension.lookupByURL(import.meta.url);
 
   return extensionObject.getSettings();

@@ -71,17 +71,11 @@ endif
 	echo done
 
 install-gkj: _build
-	rm -rf $(INSTALLBASE)/$(INSTALLNAME)
-	mkdir -p $(INSTALLBASE)/$(INSTALLNAME)
-	rsync -r ./_build/* gkj:$(INSTALLBASE)/$(INSTALLNAME)/
-	-rm -fR _build
+	rsync -r ./_build/ gkj:$(INSTALLBASE)/$(INSTALLNAME)
 	echo done
 
 install-lenny: _build
-	rm -rf $(INSTALLBASE)/$(INSTALLNAME)
-	mkdir -p $(INSTALLBASE)/$(INSTALLNAME)
-	rsync -r ./_build/* lenny:$(INSTALLBASE)/$(INSTALLNAME)/
-	-rm -fR _build
+	rsync --delete -r ./_build/ lenny:$(INSTALLBASE)/$(INSTALLNAME)
 	echo done
 
 zip-file: _build

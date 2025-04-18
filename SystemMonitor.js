@@ -6,8 +6,8 @@ import {panel} from 'resource:///org/gnome/shell/ui/main.js';
 import {color_from_string} from './Utils.js';
 
 const DATA_LENGTH = 20;
-const Background = color_from_string("black");
-const Foreground = color_from_string("cyan");
+const Background = color_from_string("rgb(5,5,5)");
+const Foreground = color_from_string("rgb(0,255,255)");
 
 const getStatStream = (mon)=>{
   if (mon._statStream.is_closed()) {
